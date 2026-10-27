@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ПЗ №31 — cookies и localStorage</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Память браузера</h1>
+      <p class="lead">Сохраняйте заметку в localStorage, а имя — в cookie.</p>
+      <h2 id="greeting">Привет, студент!</h2>
+
+      <label for="name-field">Ваше имя</label>
+      <input id="name-field" type="text" placeholder="Например, Анна" autocomplete="given-name">
+      <div class="actions">
+        <button id="save-name" type="button">Запомнить имя</button>
+        <button id="forget-name" class="secondary" type="button">Забыть имя</button>
+      </div>
+
+      <hr>
+
+      <label for="note-field">Заметка</label>
+      <textarea id="note-field" rows="5" placeholder="Например, Повторить JavaScript"></textarea>
+      <div class="actions">
+        <button id="save-note" type="button">Сохранить заметку</button>
+        <button id="delete-note" class="danger" type="button">Удалить заметку</button>
+      </div>
+      <p id="status" class="status" role="status" aria-live="polite">Введите имя и заметку для проверки.</p>
+    </section>
+    <p class="hint">Проверка: сохраните имя и заметку, обновите страницу (F5), затем попробуйте удалить заметку.</p>
+  </main>
+</body>
+</html>
